@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 def towersOfHanoi(n, fromTower, toTower, auxTower):
    print "Recursing for n="+str(n)+" fromTower="+fromTower+" toTower="+toTower
    if (n==1):

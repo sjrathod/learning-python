@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 class Solution(object):
     
     def paranth(self, n, l, r, lop, s):
