@@ -13,11 +13,10 @@ def urlify(str1, tlen):
    while i >= 0:
       if mystr[j] == " ":
          # pdb.set_trace()
-         mystr[i] = "0"
+         mystr[i - 1] = "0"
+         mystr[i - 2] = "2"
+         mystr[i - 3] = "%"
          i = i - 1
-         mystr[i] = "2"
-         i = i - 1
-         mystr[i] = "%"
       else:
          mystr[i] = mystr[j]
       j = j - 1
