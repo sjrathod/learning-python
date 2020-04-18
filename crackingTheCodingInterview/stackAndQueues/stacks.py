@@ -3,6 +3,26 @@
 from collections import deque
 import pdb
 
+class Stack(deque):
+   # function to initialize the deque
+   def __init__(self, iterable=(), maxLength=None):
+      super(Stack, self).__init__(iterable, maxLength)
+   
+   def peek(self):
+      print "Sagar printing self=", self
+      if self:
+         return self[-1]
+      else:
+         return "Empty Deque"
+
+def myStack():
+
+   s = deque()
+   print s
+
+   s.extend("123")
+   print s[-1]
+
 def main():
    s = deque("efg")
    print s
@@ -43,4 +63,5 @@ def main():
    print list(s), "<--rotated left"
 
 if __name__ == "__main__":
-   main()
+   # main()
+   myStack()
